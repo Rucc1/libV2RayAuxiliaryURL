@@ -178,6 +178,13 @@
         "--enable-udprelay"
       ],
       "VPNSetupArg": "m,1500 a,26.26.26.1,24 r,0.0.0.0,0"
+    },
+      "preparedDomainName":{
+        "domainName":[
+          "{{.Add}}:{{.Port}}"
+          ],
+          "tcpVersion":"tcp4",
+          "udpVersion":"udp4"
     }
   }
 }
